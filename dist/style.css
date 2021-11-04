@@ -1,0 +1,65 @@
+body {
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to bottom, #8e0e00, #1f1c18);
+  background: linear-gradient(to bottom, #8e0e00, #1f1c18);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+body .container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body .container .main-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+body .container .length-control {
+  width: 250px;
+}
+body .container button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+body .container button:hover {
+  color: lightgray;
+}
+body .container .btn-level,
+body .container .length-control {
+  display: inline-block;
+}
+body .container .btn-level .btn-level:nth-child(3),
+body .container .length-control .btn-level:nth-child(3) {
+  width: 2.5rem;
+}
+body .container .timer {
+  border: 6px solid #03071e;
+  margin: 1.5rem auto 0.75rem auto;
+  width: 270px;
+  height: 160px;
+  border-radius: 50px;
+}
+body .container .timer .timer-wrapper {
+  margin-top: 1rem;
+}
+body .container .timer #time-left {
+  font-size: 5rem;
+}
+body .container .timer .timer-control button:active {
+  color: lightgray;
+}
+
+@media screen and (max-width: 500px) {
+  #container {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
